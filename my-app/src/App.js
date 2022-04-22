@@ -22,8 +22,8 @@ import AddToCart from "./Projects/assets/addToCart.png";
 import ReadMore from "./Projects/assets/ReadMore.png";
 
 import Desktop from "./Projects/assets/pingala_cafe.png";
-import Mobile from "./Projects/assets/mobile.png"
-import Tablet from "././Projects/assets/tablet.png"
+import Mobile from "./Projects/assets/mobile.png";
+import Tablet from "././Projects/assets/tablet.png";
 
 import Resume from "./About/assets/Dave_Bailey_Resume.pdf";
 
@@ -112,9 +112,10 @@ function App() {
                         <div className="skillsHead">I'd love to connect!</div>
                         <div className="listContainer">
                           <div className="emailSocialContainer">
-                            <h1 className="emailHeader">
-                              dave.andrew.bailey@gmail.com
-                            </h1>
+                            <a
+                              className="resumeButton emailHeader"
+                              href={Resume}
+                            >Resume</a>
 
                             <div className="socialContainer">
                               <a href="https://trail2dev.hashnode.dev/">
@@ -140,13 +141,6 @@ function App() {
                                 />
                               </a>
                             </div>
-
-                            <button
-                              className="resumeButton emailHeader"
-                              download={Resume}
-                            >
-                              Resume
-                            </button>
                           </div>
                         </div>
                       </div>
@@ -181,9 +175,8 @@ function App() {
                             But someday had to wait.
                           </div>
                           <div className="aboutParagraph">
-                            {" "}
                             For the last five years my wife and I have had one
-                            priority…the Triple Crown of Thru-Hiking!
+                            priority: the Triple Crown of Thru-Hiking!
                           </div>
                           <img
                             className="heroImg"
@@ -264,10 +257,10 @@ function App() {
                           </div>
                           <div className="aboutParagraph">
                             A full-stack React web application that connects
-                            donors with HYH recipient's requests and faciliates
-                            the fulfillment process via a custom donation checkout.
-                            This was five-week project, executed by of a team of
-                            three developers.
+                            donors with HYH recipient requests and facilitates
+                            the fulfillment process via a custom donation
+                            checkout. This was five-week project, executed by of
+                            a team of three developers.
                           </div>
 
                           {hyhLearnMoreNotClicked && (
@@ -329,8 +322,8 @@ function App() {
                                   front-end. I wrote logic for filtering and
                                   rendering the donation cards with pagination,
                                   created the shopping cart and its donation
-                                  percentage adjustment feature, and styled
-                                  the user side of the site.
+                                  percentage adjustment feature, and styled the
+                                  user side of the site.
                                 </div>
 
                                 <div className="aboutSubHead underline">
@@ -391,7 +384,7 @@ function App() {
                             A full stack web application that catalogs the local
                             restaurants I have visited since moving to
                             Burlington, VT. I built this project independently
-                            in a collective week's time.
+                            in a week.
                           </div>
 
                           {burLearnMoreNotClicked && (
@@ -434,11 +427,11 @@ function App() {
                                 Biggest Challenge
                               </div>
                               <div className="aboutParagraph">
-                                This project exposed me to the power of using mapping
-                                to render multiple data instances. Refactoring
-                                this project to allow the navigation and
-                                restaurant pages to be dynamically rendered based
-                                upon my data was difficult to implement,
+                                This project exposed me to the power of using
+                                mapping to render multiple data instances.
+                                Refactoring this project to allow the navigation
+                                and restaurant pages to be dynamically rendered
+                                based upon my data was difficult to implement,
                                 but exciting to execute.
                               </div>
 
@@ -479,11 +472,9 @@ function App() {
                 )}
 
                 <Footer>
+
                   <div className="footerContainer">
                     <div className="emailSocialContainer">
-                      <h1 className="emailHeader">
-                        dave.andrew.bailey@gmail.com
-                      </h1>
                       <div className="socialContainer">
                         <a href="https://trail2dev.hashnode.dev/">
                           <img
