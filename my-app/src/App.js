@@ -75,22 +75,20 @@ function App() {
               <Home>
                 <Hero>
                   <div className="heroContainer">
-                      <div className="subHeadContainer">
-                    <div className="heroHeader">Hi, I'm Dave.</div>
-                        <div className="heroSubHead">
-                          I might be the only software developer, gardener,
-                          thru-hiker on the planet.
-                        </div>
+                    <div className="subHeadContainer">
+                      <div className="heroHeader">Hi, I'm Dave.</div>
+                      <div className="heroSubHead">
+                        I might be the only software developer, gardener,
+                        thru-hiker on the planet.
                       </div>
-
-
-                        <img
-                          className="heroImg"
-                          src={YellowStoneDave}
-                          alt="Dave in Yellowstone National Park"
-                        />
-                    
                     </div>
+
+                    <img
+                      className="heroImg"
+                      src={YellowStoneDave}
+                      alt="Dave in Yellowstone National Park"
+                    />
+                  </div>
 
                   <div className="toggleContainer">
                     <div className="toggleAbout">My Projects</div>
@@ -105,58 +103,62 @@ function App() {
                 {aboutOpen ? (
                   <About>
                     <div className="pageLoad">
-                    <div className="skillContactContainer">  
-                    <div className="skillsContainer">
-                        <div className="skillsHead">I'd love to connect!</div>
-                        <div className="listContainer">
-                          <div className="emailSocialContainer">
-                            <a
-                              className="resumeButton emailHeader"
-                              href={Resume}
-                            >Resume</a>
+                      <div className="skillContactContainer">
+                        <div className="skillsContainer">
+                          <div className="skillsHead">I'd love to connect!</div>
+                          <div className="listContainer">
+                            <div className="emailSocialContainer">
+                              <a
+                                className="resumeButton emailHeader"
+                                href={Resume}
+                              >
+                                Resume
+                              </a>
 
-                            <div className="socialContainer">
-                              <a href="https://trail2dev.hashnode.dev/">
-                                <img
-                                  className="socialLogo"
-                                  src={HN}
-                                  alt="Hashnode logo"
-                                />
-                              </a>
-                              <a href="https://github.com/dave-bailey">
-                                <img
-                                  className="socialLogo"
-                                  src={GH}
-                                  alt="GitHub logo"
-                                  href="https://github.com/dave-bailey"
-                                />
-                              </a>
-                              <a href="https://www.linkedin.com/in/dave-andrew-bailey/">
-                                <img
-                                  className="socialLogo"
-                                  src={LI}
-                                  alt="LinkedIn logo"
-                                />
-                              </a>
+                              <div className="socialContainer">
+                                <a href="https://trail2dev.hashnode.dev/">
+                                  <img
+                                    className="socialLogo"
+                                    src={HN}
+                                    alt="Hashnode logo"
+                                  />
+                                </a>
+                                <a href="https://github.com/dave-bailey">
+                                  <img
+                                    className="socialLogo"
+                                    src={GH}
+                                    alt="GitHub logo"
+                                    href="https://github.com/dave-bailey"
+                                  />
+                                </a>
+                                <a href="https://www.linkedin.com/in/dave-andrew-bailey/">
+                                  <img
+                                    className="socialLogo"
+                                    src={LI}
+                                    alt="LinkedIn logo"
+                                  />
+                                </a>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="skillsContainer marginLeft">
-                        <div className="skillsHead">This guy's got skills!</div>
-                        <div className="listContainer">
-                          <ul className="skillsListRight">
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>HTML5</li>
-                          </ul>
-                          <ul className="skillsList">
-                            <li>CSS3</li>
-                            <li>Git</li>
-                            <li>MongoDB</li>
-                          </ul>
+                        <div className="skillsContainer marginLeft">
+                          <div className="skillsHead">
+                            This guy's got skills!
+                          </div>
+                          <div className="listContainer">
+                            <ul className="skillsListRight">
+                              <li>JavaScript</li>
+                              <li>React</li>
+                              <li>HTML5</li>
+                            </ul>
+                            <ul className="skillsList">
+                              <li>CSS3</li>
+                              <li>Git</li>
+                              <li>MongoDB</li>
+                            </ul>
+                          </div>
                         </div>
-                      </div>
                       </div>
 
                       <div className="background">
@@ -246,58 +248,62 @@ function App() {
                 ) : (
                   <Projects>
                     <div className="pageLoad">
-                    <div className="skillContactContainer">  
-                    <div className="skillsContainer">
-                        <div className="skillsHead">I'd love to connect!</div>
-                        <div className="listContainer">
-                          <div className="emailSocialContainer">
-                            <a
-                              className="resumeButton emailHeader"
-                              href={Resume}
-                            >Resume</a>
+                      <div className="skillContactContainer">
+                        <div className="skillsContainer">
+                          <div className="skillsHead">I'd love to connect!</div>
+                          <div className="listContainer">
+                            <div className="emailSocialContainer">
+                              <a
+                                className="resumeButton emailHeader"
+                                href={Resume}
+                              >
+                                Resume
+                              </a>
 
-                            <div className="socialContainer">
-                              <a href="https://trail2dev.hashnode.dev/">
-                                <img
-                                  className="socialLogo"
-                                  src={HN}
-                                  alt="Hashnode logo"
-                                />
-                              </a>
-                              <a href="https://github.com/dave-bailey">
-                                <img
-                                  className="socialLogo"
-                                  src={GH}
-                                  alt="GitHub logo"
-                                  href="https://github.com/dave-bailey"
-                                />
-                              </a>
-                              <a href="https://www.linkedin.com/in/dave-andrew-bailey/">
-                                <img
-                                  className="socialLogo"
-                                  src={LI}
-                                  alt="LinkedIn logo"
-                                />
-                              </a>
+                              <div className="socialContainer">
+                                <a href="https://trail2dev.hashnode.dev/">
+                                  <img
+                                    className="socialLogo"
+                                    src={HN}
+                                    alt="Hashnode logo"
+                                  />
+                                </a>
+                                <a href="https://github.com/dave-bailey">
+                                  <img
+                                    className="socialLogo"
+                                    src={GH}
+                                    alt="GitHub logo"
+                                    href="https://github.com/dave-bailey"
+                                  />
+                                </a>
+                                <a href="https://www.linkedin.com/in/dave-andrew-bailey/">
+                                  <img
+                                    className="socialLogo"
+                                    src={LI}
+                                    alt="LinkedIn logo"
+                                  />
+                                </a>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div className="skillsContainer marginLeft">
-                        <div className="skillsHead">This guy's got skills!</div>
-                        <div className="listContainer">
-                          <ul className="skillsListRight">
-                            <li>JavaScript</li>
-                            <li>React</li>
-                            <li>HTML5</li>
-                          </ul>
-                          <ul className="skillsList">
-                            <li>CSS3</li>
-                            <li>Git</li>
-                            <li>MongoDB</li>
-                          </ul>
+                        <div className="skillsContainer marginLeft">
+                          <div className="skillsHead">
+                            This guy's got skills!
+                          </div>
+                          <div className="listContainer">
+                            <ul className="skillsListRight">
+                              <li>JavaScript</li>
+                              <li>React</li>
+                              <li>HTML5</li>
+                            </ul>
+                            <ul className="skillsList">
+                              <li>CSS3</li>
+                              <li>Git</li>
+                              <li>MongoDB</li>
+                            </ul>
+                          </div>
                         </div>
-                      </div>
                       </div>
 
                       <div className="background">
@@ -393,7 +399,7 @@ function App() {
                                   when my page rendered with the corresponding
                                   data and the correct number of pages!
                                 </div>
-{/* 
+                                {/* 
                                 <img
                                   className="heroImg projectMargin"
                                   src={Filter}
@@ -488,7 +494,7 @@ function App() {
                                 based upon my data was difficult to implement,
                                 but exciting to execute.
                               </div>
-{/* 
+                              {/* 
                               <img
                                 className="heroImg projectMargin"
                                 src={Mobile}
@@ -526,7 +532,6 @@ function App() {
                 )}
 
                 <Footer>
-
                   <div className="footerContainer">
                     <div className="emailSocialContainer">
                       <div className="socialContainer">

@@ -7,6 +7,7 @@
   border-bottom: .3rem solid #FFA100;
   margin-bottom: .8rem;
   color: #323639;
+  max-width: 65rem;
 }
 
 .toggleAbout {
