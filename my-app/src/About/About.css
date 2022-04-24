@@ -1,57 +1,88 @@
 @keyframes pageLoad {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-    }
+  0% {
+    opacity: 0%;
   }
-
-.pageLoad {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: 0.5s ease-in pageLoad;
+  100% {
+    opacity: 100%;
+  }
 }
 
-.background {    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #efefef;
-    width: 90%;
-    padding: 1.6rem 0 1.6rem 0;
-    border-radius: .3rem;
-    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+.pageLoad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: 0.5s ease-in pageLoad;
+  width: 90%;
+
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+  width: 100%;
+  padding: 1.6rem 0 1.6rem 0;
+  border-radius: 0.3rem;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  margin-top: .8rem;
 }
 
 .aboutContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 80%;
-    color: #323639;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  color: #323639;
 }
 
 .aboutHeader {
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding-bottom: .4rem;
-    color: #2574db;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  color: #2574db;
 }
 .aboutSubHead {
-    font-size: 1.2rem;
-    line-height: 2.1rem;
-    font-weight: 600;
-    padding: .4rem 0 .4rem 0;
-    width: 100%;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  padding: 0.4rem 0 0.4rem 0;
+  width: 100%;
 }
 
 .aboutParagraph {
-    font-size: 1.2rem;
-    line-height: 2.1rem;
-    font-weight: 300;
-    padding: .4rem 0 .4rem 0;
+  font-size: 1.2rem;
+  line-height: 2.1rem;
+  font-weight: 300;
+  padding: 0.4rem 0 0.4rem 0;
+}
 
+.skillContactContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 640px) {
+  .background {
+    width: 90%;
+  }
+
+  .aboutContainer {
+    max-width: 65rem;
+  }
+
+  .skillContactContainer {
+    width: 90%;
+    flex-direction: row;
+    max-width: 65rem;
+}
+
+.marginLeft {
+    margin-left: 1.6rem;
+  }
 }

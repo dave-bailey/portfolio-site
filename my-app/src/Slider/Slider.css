@@ -86,3 +86,20 @@
     border-radius: 50%;
   }
 
+  @media screen and (min-width: 1024px) {
+
+    .toggleAbout {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: .8rem;
+      text-align: right;
+    }
+    
+    .toggleProjects {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: .8rem;
+      text-align: left;
+    }
+
+  }

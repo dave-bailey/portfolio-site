@@ -31,7 +31,7 @@ import "./App.css";
 import "./Slider/Slider.css";
 
 function App() {
-  const [aboutOpen, setAboutOpen] = useState(true);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const [hyhReadMoreOpen, setHYHReadMoreOpen] = useState(false);
   const [hyhLearnMoreNotClicked, setHYHLearnMoreNotClicked] = useState(true);
   const [burReadMoreOpen, setBurReadMore] = useState(false);
@@ -75,40 +75,38 @@ function App() {
               <Home>
                 <Hero>
                   <div className="heroContainer">
-                    <div className="heroHeader">Hi, I'm Dave.</div>
-
-                    <div className="ImgSubSocialContainer">
                       <div className="subHeadContainer">
+                    <div className="heroHeader">Hi, I'm Dave.</div>
                         <div className="heroSubHead">
                           I might be the only software developer, gardener,
                           thru-hiker on the planet.
                         </div>
                       </div>
 
-                      <div className="heroImgContainer">
+
                         <img
                           className="heroImg"
                           src={YellowStoneDave}
                           alt="Dave in Yellowstone National Park"
                         />
-                      </div>
+                    
                     </div>
-                  </div>
 
                   <div className="toggleContainer">
-                    <div className="toggleAbout">About Me</div>
+                    <div className="toggleAbout">My Projects</div>
                     <label className="switch">
                       <input type="checkbox" onChange={toggle} />
                       <span className="slider round"></span>
                     </label>
-                    <div className="toggleProjects">My Projects</div>
+                    <div className="toggleProjects">About Me</div>
                   </div>
                 </Hero>
 
                 {aboutOpen ? (
                   <About>
                     <div className="pageLoad">
-                      <div className="skillsContainer">
+                    <div className="skillContactContainer">  
+                    <div className="skillsContainer">
                         <div className="skillsHead">I'd love to connect!</div>
                         <div className="listContainer">
                           <div className="emailSocialContainer">
@@ -144,6 +142,22 @@ function App() {
                           </div>
                         </div>
                       </div>
+                      <div className="skillsContainer marginLeft">
+                        <div className="skillsHead">This guy's got skills!</div>
+                        <div className="listContainer">
+                          <ul className="skillsListRight">
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>HTML5</li>
+                          </ul>
+                          <ul className="skillsList">
+                            <li>CSS3</li>
+                            <li>Git</li>
+                            <li>MongoDB</li>
+                          </ul>
+                        </div>
+                      </div>
+                      </div>
 
                       <div className="background">
                         <section className="aboutContainer">
@@ -158,11 +172,13 @@ function App() {
                             regenerative agricultural practice. I’ve even
                             managed a historical garden or two.
                           </div>
+
                           <img
                             className="heroImg"
                             src={Jackfruit}
                             alt="Dave holding a giant jackfruit"
                           />
+
                           <div className="aboutParagraph">
                             But things shifted when I first dipped my toe into
                             web development. I made a SquareSpace site for my
@@ -230,7 +246,44 @@ function App() {
                 ) : (
                   <Projects>
                     <div className="pageLoad">
-                      <div className="skillsContainer">
+                    <div className="skillContactContainer">  
+                    <div className="skillsContainer">
+                        <div className="skillsHead">I'd love to connect!</div>
+                        <div className="listContainer">
+                          <div className="emailSocialContainer">
+                            <a
+                              className="resumeButton emailHeader"
+                              href={Resume}
+                            >Resume</a>
+
+                            <div className="socialContainer">
+                              <a href="https://trail2dev.hashnode.dev/">
+                                <img
+                                  className="socialLogo"
+                                  src={HN}
+                                  alt="Hashnode logo"
+                                />
+                              </a>
+                              <a href="https://github.com/dave-bailey">
+                                <img
+                                  className="socialLogo"
+                                  src={GH}
+                                  alt="GitHub logo"
+                                  href="https://github.com/dave-bailey"
+                                />
+                              </a>
+                              <a href="https://www.linkedin.com/in/dave-andrew-bailey/">
+                                <img
+                                  className="socialLogo"
+                                  src={LI}
+                                  alt="LinkedIn logo"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="skillsContainer marginLeft">
                         <div className="skillsHead">This guy's got skills!</div>
                         <div className="listContainer">
                           <ul className="skillsListRight">
@@ -244,6 +297,7 @@ function App() {
                             <li>MongoDB</li>
                           </ul>
                         </div>
+                      </div>
                       </div>
 
                       <div className="background">
@@ -306,11 +360,11 @@ function App() {
                                   Userfront.
                                 </div>
 
-                                <img
+                                {/* <img
                                   className="heroImg projectMargin"
                                   src={ReadMore}
                                   alt="HYH request page"
-                                />
+                                /> */}
 
                                 <div className="aboutSubHead underline">
                                   My Role
@@ -339,12 +393,12 @@ function App() {
                                   when my page rendered with the corresponding
                                   data and the correct number of pages!
                                 </div>
-
+{/* 
                                 <img
                                   className="heroImg projectMargin"
                                   src={Filter}
                                   alt="HYH request page"
-                                />
+                                /> */}
 
                                 <div className="aboutSubHead underline">
                                   Lessons Learned
@@ -417,11 +471,11 @@ function App() {
                                 React, HTML5, CSS3, Nodejs, and React-Leaflet.
                               </div>
 
-                              <img
+                              {/* <img
                                 className="heroImg projectMargin"
                                 src={Tablet}
                                 alt="Tablet design of restaurant page"
-                              />
+                              /> */}
 
                               <div className="aboutSubHead underline">
                                 Biggest Challenge
@@ -434,12 +488,12 @@ function App() {
                                 based upon my data was difficult to implement,
                                 but exciting to execute.
                               </div>
-
+{/* 
                               <img
                                 className="heroImg projectMargin"
                                 src={Mobile}
                                 alt="Mobile design of navigation and restaurant page"
-                              />
+                              /> */}
 
                               <div className="aboutSubHead underline">
                                 Lessons Learned

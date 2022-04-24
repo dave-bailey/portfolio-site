@@ -9,7 +9,7 @@
 .heroHeader {
   font-weight: 600;
   font-size: 3.2rem;
-  margin: 3.2rem 0 0 0;
+  margin: 3.2rem 0 .8rem 0;
   padding-bottom: 0.4rem;
   border-bottom: 0.3rem solid #ffa100;
 }
@@ -24,6 +24,7 @@
 
 .subHeadContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -38,24 +39,17 @@
 }
 
 .heroImg {
+  max-width: 30rem;
   width: 100%;
   border-radius: 0.3rem;
   box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
 }
 
-.heroImgContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
-}
 
 .socialContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   margin: .2rem 0 .4rem 0;
 }
 
@@ -74,8 +68,8 @@
   align-items: center;
   flex-direction: column;
   height: 11.4rem;
-  margin: 0.8rem 0 1.6rem 0;
-  width: 90%;
+  margin: 0.8rem 0 .8rem 0;
+  width: 100%;
   border-radius: 0.3rem;
   box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
 }
@@ -86,7 +80,7 @@
   align-items: center;
   font-size: 1.6rem;
   font-weight: 600;
-  margin: 0rem 1.6rem 0 1.6rem;
+  margin: 0rem 0rem 0 0rem;
   text-align: right;
   color: #efefef;
   background-color: #2574db;
@@ -157,5 +151,44 @@
 
 .resumeButton:hover {
   border-bottom: 0.3rem solid #ffa100;
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .heroContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .heroHeader {
+    text-align: right;
+    font-weight: 600;
+    font-size: 4rem;
+    margin: 3.2rem 0 .8rem 0;
+  }
+
+  .subHeadContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 3.2rem;
+  }
+
+  .heroSubHead {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: right;
+  }
+
+  .heroImg {
+    max-width: 36rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+    margin: 3.2rem 0 1.6rem 0;
+  }
 
 }
