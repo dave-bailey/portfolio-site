@@ -111,6 +111,7 @@ function App() {
                               <a
                                 className="resumeButton emailHeader"
                                 href={Resume}
+                                download="Dave Bailey Resume"
                               >
                                 Resume
                               </a>
@@ -317,10 +318,9 @@ function App() {
                           </div>
                           <div className="aboutParagraph">
                             A full-stack React web application that connects
-                            donors with HYH recipient requests and facilitates
-                            the fulfillment process via a custom donation
-                            checkout. This was five-week project, executed by of
-                            a team of three developers.
+                            donors with HYH requests and facilitates fulfillment
+                            via a custom checkout. This was five-week project,
+                            executed by a team of three developers.
                           </div>
 
                           {hyhLearnMoreNotClicked && (
@@ -351,9 +351,9 @@ function App() {
                                 </div>
                                 <div className="aboutParagraph">
                                   In order streamline the donation flow, we
-                                  built a clone of the current request’s page,
-                                  added the shopping cart feature, and created
-                                  an admin portal to add new and update existing
+                                  built a clone of the current request page,
+                                  added a shopping cart feature, and created an
+                                  admin portal to add new and update existing
                                   items in the database.
                                 </div>
 
@@ -387,17 +387,24 @@ function App() {
                                 </div>
 
                                 <div className="aboutSubHead underline">
-                                  Biggest Challenge
+                                  Biggest Challenges
                                 </div>
                                 <div className="aboutParagraph">
+                                  Starting off, I found my click events were
+                                  targeting all my cards at once. I used each
+                                  object's id as an argument for my handler
+                                  function to isolate individual cards.
+                                  <div className="aboutParagraph">
+                                  </div>
                                   Connecting the dynamic category and state
                                   filters with the pagination and donation card
                                   rendering was probably my biggest hurdle for
                                   this project. It combined four state
                                   dependancies and multiple data mapping and
-                                  filtering methods. I felt like a hometown-hero
-                                  when my page rendered with the corresponding
-                                  data and the correct number of pages!
+                                  filtering methods.
+                                  </div> 
+                                  <div className="aboutParagraph">
+                                  I created a category flag that was triggered when a filter was selected and then pass the length of the filtered list to my pagination to create the correct number of pages. Before completing this my pagniation had a total number of pages that 
                                 </div>
                                 {/* 
                                 <img

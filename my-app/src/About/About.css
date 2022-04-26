@@ -70,9 +70,6 @@
     max-width: 65rem;
   }
 
-  /* .aboutContainer {
-    max-width: 65rem;
-  } */
 
   .skillContactContainer {
     width: 90%;
@@ -82,5 +79,12 @@
 
   .marginLeft {
     margin-left: 1.6rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+.aboutContainer {
+    width: 75%;
   }
 }
