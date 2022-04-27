@@ -333,6 +333,16 @@ function App() {
                             <>
                               {/* <div className="projectDescription"> */}
                                 <div className="aboutSubHead underline">
+                                  About Hearts You Hold
+                                </div>
+                                <div className="aboutParagraph">
+                                Hearts You Hold is a non-profit organization whose mission is to support migrants, immigrants, and refugees. Donors visit the website to view specific requests and choose where they would like their donation to go.
+                                </div>
+                                <div className="aboutParagraph">
+                                I was incredibly excited to be a part of this project. A large number of the people served by this organization work in the agriculture, horticulture industry. Being able to combine my two passions of programing and agriculture was a dream come true!
+                                </div>
+
+                                <div className="aboutSubHead underline">
                                   The Problem
                                 </div>
                                 <div className="aboutParagraph">
