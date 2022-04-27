@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./Home/Home.js";
 import Hero from "./Hero/Hero.js";
@@ -17,13 +17,10 @@ import CDT from "./About/assets/CDT.jpeg";
 import Jackfruit from "./About/assets/Jackfruit.jpeg";
 import Sarracenia from "./About/assets/Sarracenia.jpeg";
 
-import Filter from "./Projects/assets/filter.png";
-import AddToCart from "./Projects/assets/addToCart.png";
-import ReadMore from "./Projects/assets/ReadMore.png";
-
-import Desktop from "./Projects/assets/pingala_cafe.png";
-import Mobile from "./Projects/assets/mobile.png";
-import Tablet from "././Projects/assets/tablet.png";
+import hyh_mobile from "./Projects/assets/hyh_mobile.gif";
+import hyh from "./Projects/assets/hyh.gif";
+import desktop_burl from "./Projects/assets/desktop_burl.gif";
+import mobile_burl from "./Projects/assets/mobile_burl.gif";
 
 import Resume from "./About/assets/Dave_Bailey_Resume.pdf";
 
@@ -214,7 +211,7 @@ function App() {
                           </div>
                           <div className="aboutParagraph">
                             Now that the Triple Crown dream has been realized
-                            (yeah, I’ve really walked across America 3x…it’s
+                            (yeah, I’ve really walked across America 3x. It’s
                             still crazy to me too),
                           </div>
                           <div className="aboutSubHead">
@@ -237,7 +234,7 @@ function App() {
                           />
                           <div className="aboutParagraph">
                             I’m not into everything, but the things I am
-                            into…I’m really into!
+                            into, I’m really into!
                           </div>
                           <div className="aboutSubHead">
                             And programming has made the list.
@@ -334,7 +331,7 @@ function App() {
 
                           {hyhReadMoreOpen && (
                             <>
-                              <div className="projectDescription">
+                              {/* <div className="projectDescription"> */}
                                 <div className="aboutSubHead underline">
                                   The Problem
                                 </div>
@@ -365,12 +362,6 @@ function App() {
                                   Nodejs, Paypal, Mailchimp, NodeMailer, and
                                   Userfront.
                                 </div>
-
-                                {/* <img
-                                  className="heroImg projectMargin"
-                                  src={ReadMore}
-                                  alt="HYH request page"
-                                /> */}
 
                                 <div className="aboutSubHead underline">
                                   My Role
@@ -404,14 +395,8 @@ function App() {
                                   filtering methods.
                                   </div> 
                                   <div className="aboutParagraph">
-                                  I created a category flag that was triggered when a filter was selected and then pass the length of the filtered list to my pagination to create the correct number of pages. Before completing this my pagniation had a total number of pages that 
+                                  I created a category flag that was triggered when a filter was selected and then pass the length of the filtered list to my pagination to create the correct number of pages. I execute this function each time a page or filter selection changes.
                                 </div>
-                                {/* 
-                                <img
-                                  className="heroImg projectMargin"
-                                  src={Filter}
-                                  alt="HYH request page"
-                                /> */}
 
                                 <div className="aboutSubHead underline">
                                   Lessons Learned
@@ -428,20 +413,26 @@ function App() {
                                   very proud of!
                                 </div>
 
+                                <img
+                                  className="heroImg projectMargin"
+                                  src={hyh_mobile}
+                                  alt="HYH request page mobile gif"
+                                /> 
+
                                 <button
                                   className="learnMore"
                                   onClick={learnMoreHYH}
                                 >
                                   Close
                                 </button>
-                              </div>
+                              {/* </div> */}
                             </>
                           )}
 
                           <img
                             className="heroImg projectMargin"
-                            src={AddToCart}
-                            alt="HYH request page"
+                            src={hyh}
+                            alt="HYH request page desktop gif"
                           />
 
                           <div className="aboutSubHead underline">
@@ -484,29 +475,17 @@ function App() {
                                 React, HTML5, CSS3, Nodejs, and React-Leaflet.
                               </div>
 
-                              {/* <img
-                                className="heroImg projectMargin"
-                                src={Tablet}
-                                alt="Tablet design of restaurant page"
-                              /> */}
-
                               <div className="aboutSubHead underline">
                                 Biggest Challenge
                               </div>
                               <div className="aboutParagraph">
-                                This project exposed me to the power of using
-                                mapping to render multiple data instances.
+                                This project exposed me to the power of
+                                mapping to render multiple components.
                                 Refactoring this project to allow the navigation
                                 and restaurant pages to be dynamically rendered
                                 based upon my data was difficult to implement,
-                                but exciting to execute.
+                                but exciting to execute. This experience has given me a better understanding of data-first development.
                               </div>
-                              {/* 
-                              <img
-                                className="heroImg projectMargin"
-                                src={Mobile}
-                                alt="Mobile design of navigation and restaurant page"
-                              /> */}
 
                               <div className="aboutSubHead underline">
                                 Lessons Learned
@@ -517,6 +496,12 @@ function App() {
                                 has opened my eyes to a new world of
                                 possibilties for future projects!
                               </div>
+
+                              <img
+                                className="heroImg projectMargin"
+                                src={mobile_burl}
+                                alt="Mobile design of navigation and restaurant page"
+                              />
 
                               <button
                                 className="learnMore"
@@ -529,8 +514,8 @@ function App() {
 
                           <img
                             className="heroImg projectMargin"
-                            src={Desktop}
-                            alt="Desktop design of restaurant page"
+                            src={desktop_burl}
+                            alt="gif of hearts you hold project"
                           />
                         </section>
                       </div>
