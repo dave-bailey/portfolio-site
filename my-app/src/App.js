@@ -87,20 +87,7 @@ function App() {
                     />
                   </div>
 
-                  <div className="toggleContainer">
-                    <div className="toggleAbout">My Projects</div>
-                    <label className="switch">
-                      <input type="checkbox" onChange={toggle} />
-                      <span className="slider round"></span>
-                    </label>
-                    <div className="toggleProjects">About Me</div>
-                  </div>
-                </Hero>
-
-                {aboutOpen ? (
-                  <About>
-                    <div className="pageLoad">
-                      <div className="skillContactContainer">
+                  <div className="skillContactContainer">
                         <div className="skillsContainer">
                           <div className="skillsHead">I'd love to connect!</div>
                           <div className="listContainer">
@@ -108,7 +95,6 @@ function App() {
                               <a
                                 className="resumeButton emailHeader"
                                 href={Resume}
-                                download="Dave Bailey Resume"
                               >
                                 Resume
                               </a>
@@ -159,6 +145,21 @@ function App() {
                         </div>
                       </div>
 
+                  <div className="toggleContainer">
+                    <div className="toggleAbout">My Projects</div>
+                    <label className="switch">
+                      <input type="checkbox" onChange={toggle} />
+                      <span className="slider round"></span>
+                    </label>
+                    <div className="toggleProjects">About Me</div>
+                  </div>
+                  
+                </Hero>
+
+                {aboutOpen ? (
+                  <About>
+                    <div className="pageLoad">
+                      
                       <div className="background">
                         <section className="aboutContainer">
                           <div className="aboutHeader">A bit about me.</div>
@@ -242,67 +243,12 @@ function App() {
                         </section>
                       </div>
                     </div>
+                    
                   </About>
                 ) : (
                   <Projects>
                     <div className="pageLoad">
-                      <div className="skillContactContainer">
-                        <div className="skillsContainer">
-                          <div className="skillsHead">I'd love to connect!</div>
-                          <div className="listContainer">
-                            <div className="emailSocialContainer">
-                              <a
-                                className="resumeButton emailHeader"
-                                href={Resume}
-                              >
-                                Resume
-                              </a>
 
-                              <div className="socialContainer">
-                                <a href="https://trail2dev.hashnode.dev/">
-                                  <img
-                                    className="socialLogo"
-                                    src={HN}
-                                    alt="Hashnode logo"
-                                  />
-                                </a>
-                                <a href="https://github.com/dave-bailey">
-                                  <img
-                                    className="socialLogo"
-                                    src={GH}
-                                    alt="GitHub logo"
-                                    href="https://github.com/dave-bailey"
-                                  />
-                                </a>
-                                <a href="https://www.linkedin.com/in/dave-andrew-bailey/">
-                                  <img
-                                    className="socialLogo"
-                                    src={LI}
-                                    alt="LinkedIn logo"
-                                  />
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="skillsContainer marginLeft">
-                          <div className="skillsHead">
-                            This guy's got skills!
-                          </div>
-                          <div className="listContainer">
-                            <ul className="skillsListRight">
-                              <li>JavaScript</li>
-                              <li>React</li>
-                              <li>HTML5</li>
-                            </ul>
-                            <ul className="skillsList">
-                              <li>CSS3</li>
-                              <li>Git</li>
-                              <li>MongoDB</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
 
                       <div className="background">
                         <section className="aboutContainer">
@@ -331,7 +277,7 @@ function App() {
 
                           {hyhReadMoreOpen && (
                             <>
-                              {/* <div className="projectDescription"> */}
+
                                 <div className="aboutSubHead underline">
                                   About Hearts You Hold
                                 </div>
@@ -339,7 +285,7 @@ function App() {
                                 Hearts You Hold is a non-profit organization whose mission is to support migrants, immigrants, and refugees. Donors visit the website to view specific requests and choose where they would like their donation to go.
                                 </div>
                                 <div className="aboutParagraph">
-                                I was incredibly excited to be a part of this project. A large number of the people served by this organization work in the agriculture, horticulture industry. Being able to combine my two passions of programing and agriculture was a dream come true!
+                                I was incredibly excited to be a part of this project. A large number of the people served by this organization work in the agriculture, horticulture industry. Being able to combine my two passions of programming and agriculture was a dream come true!
                                 </div>
 
                                 <div className="aboutSubHead underline">
@@ -435,7 +381,6 @@ function App() {
                                 >
                                   Close
                                 </button>
-                              {/* </div> */}
                             </>
                           )}
 
