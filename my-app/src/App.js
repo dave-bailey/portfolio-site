@@ -174,11 +174,13 @@ function App() {
                             managed a historical garden or two.
                           </div>
 
+                        <div className="imageFlexContainer">
                           <img
                             className="heroImg"
                             src={Jackfruit}
                             alt="Dave holding a giant jackfruit"
                           />
+                        </div>  
 
                           <div className="aboutParagraph">
                             But things shifted when I first dipped my toe into
@@ -195,11 +197,15 @@ function App() {
                             For the last five years my wife and I have had one
                             priority: the Triple Crown of Thru-Hiking!
                           </div>
+
+                          <div className="imageFlexContainer">
                           <img
                             className="heroImg"
                             src={CDT}
                             alt="Dave and Leisel at the southern terminus of the CDT."
                           />
+                          </div>  
+
                           <div className="aboutParagraph">
                             The Triple Crown refers to the Appalachian Trail,
                             the Continental Divide Trail, and the Pacific Crest
@@ -228,11 +234,15 @@ function App() {
                             to me, and coding has given me a new direction and
                             place to focus my enthusiasm and energy.
                           </div>
+
+                          <div className="imageFlexContainer">
                           <img
                             className="heroImg"
                             src={Sarracenia}
                             alt="Dave looking at a sarracenia leucophylla"
                           />
+                          </div>
+
                           <div className="aboutParagraph">
                             I’m not into everything, but the things I am
                             into, I’m really into!
@@ -369,11 +379,13 @@ function App() {
                                   very proud of!
                                 </div>
 
+                                <div className="imageFlexContainer">
                                 <img
                                   className="heroImg projectMargin"
                                   src={hyh_mobile}
                                   alt="HYH request page mobile gif"
                                 /> 
+                                </div>
 
                                 <button
                                   className="learnMore"
@@ -384,11 +396,14 @@ function App() {
                             </>
                           )}
 
+                          <div className="imageFlexContainer">
+    
                           <img
                             className="heroImg projectMargin"
                             src={hyh}
                             alt="HYH request page desktop gif"
                           />
+                           </div>
 
                           <div className="aboutSubHead underline">
                             New to Burlington: Restaurant Catalog
@@ -399,6 +414,8 @@ function App() {
                             Burlington, VT. I built this project independently
                             in a week.
                           </div>
+
+                         
 
                           {burLearnMoreNotClicked && (
                             <button
@@ -452,11 +469,13 @@ function App() {
                                 possibilties for future projects!
                               </div>
 
+                              <div className="imageFlexContainer">
                               <img
                                 className="heroImg projectMargin"
                                 src={mobile_burl}
                                 alt="Mobile design of navigation and restaurant page"
                               />
+                              </div>
 
                               <button
                                 className="learnMore"
@@ -467,11 +486,14 @@ function App() {
                             </>
                           )}
 
+                          <div className="imageFlexContainer">
                           <img
                             className="heroImg projectMargin"
                             src={desktop_burl}
                             alt="gif of hearts you hold project"
                           />
+                          </div>
+
                         </section>
                       </div>
                     </div>
