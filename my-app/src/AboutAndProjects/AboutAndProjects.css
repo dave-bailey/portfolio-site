@@ -1,19 +1,10 @@
-@keyframes pageLoad {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-
-.pageLoad {
+.pageLoadContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: 0.5s ease-in pageLoad;
-  width: 90%;
+  width: 80%;
 }
 
 .background {
@@ -28,7 +19,7 @@
   margin-top: 0.8rem;
 }
 
-.aboutContainer {
+.sectionContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -36,13 +27,13 @@
   color: #323639;
 }
 
-.aboutHeader {
+.header {
   font-size: 1.6rem;
   font-weight: 600;
   padding-bottom: 0.4rem;
   color: #2574db;
 }
-.aboutSubHead {
+.subHeadSection {
   font-size: 1.2rem;
   line-height: 2.1rem;
   font-weight: 600;
@@ -50,23 +41,14 @@
   width: 100%;
 }
 
-.aboutParagraph {
+.paragraphSection {
   font-size: 1.2rem;
   line-height: 2.1rem;
   font-weight: 300;
   padding: 0.4rem 0 0.4rem 0;
 }
 
-.skillContactContainer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 80%;
-  margin: .8rem 0 .4rem 0;
-}
-
 .imageFlexContainer {
-
   width: 100%;
   display: flex;
   justify-content: center;
@@ -74,26 +56,28 @@
   margin: 1.6rem 0 1.6rem 0;
 }
 
-@media screen and (min-width: 640px) {
-  .background {
-    width: 90%;
-    max-width: 65rem;
-  }
-
-
-  .skillContactContainer {
-    flex-direction: row;
-    max-width: 65rem;
-  }
-
-  .marginLeft {
-    margin-left: 1.6rem;
-  }
+.underline {
+  border-bottom: 0.3rem solid #ffa100;
 }
 
+.learnMore {
+  margin: 0.4rem 0 0rem 0;
+  background: none;
+  color: #323639;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0 0 0.4rem 0;
+}
 
-@media screen and (min-width: 1024px) {
-.aboutContainer {
-    width: 75%;
+.learnMore:hover {
+  border-bottom: 0.3rem solid #ffa100;
+}
+
+@media screen and (min-width: 640px) {
+  .background {
+    width: 100%;
+    max-width: 65rem;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css"
+import "./AboutAndProjects.css"
 
 export default function Hero(props) {
     return (<>
