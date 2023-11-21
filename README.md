@@ -1,10 +1,9 @@
 # Project: Personal Portfolio - dave-bailey.dev
 
-This site showcases my projects and tells of my development journey.
+This was my initial portfolio site to showcase my projects and tell of my development journey.
 
 I built this site with ReactJs and used this project to develop my understanding of React Composition.
 
-You can visit the live site [here](https://dave-bailey.dev/).
 
 
 
